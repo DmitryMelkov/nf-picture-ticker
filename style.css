@@ -212,6 +212,8 @@ input[type='number'] {
   background-color: orange;
   border: 3px solid darkorange;
   border-radius: 8px;
+
+  transition: opacity 0.3s ease-in-out;
 }
 
 .ticker-img__item-span {
@@ -227,6 +229,14 @@ input[type='number'] {
 
 .reverce {
   animation-direction: reverse;
+}
+
+.ticker-img__container:hover .marquee {
+  animation-play-state: paused;
+}
+
+.ticker-img__item:hover {
+  opacity: 0.5;
 }
 
 @keyframes scroll {
