@@ -97,11 +97,13 @@ input[type='text']::-ms-clear {
   width: 0;
   height: 0;
 }
+
 input[type='text']::-ms-reveal {
   display: none;
   width: 0;
   height: 0;
 }
+
 input[type='search']::-webkit-search-decoration,
 input[type='search']::-webkit-search-cancel-button,
 input[type='search']::-webkit-search-results-button,
@@ -115,6 +117,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 input[type='number'] {
   -moz-appearance: textfield;
 }
@@ -127,18 +130,35 @@ input[type='number'] {
 /* ticker */
 
 .ticker-img {
-  margin-top: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 40%;
+  max-width: 442px;
+  height: 90vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
+  border: 3px solid orange;
+  background-color: rgba(221, 213, 213, 0.5);
+  border-radius: 8px;
+}
+
+.ticker-img__container-left {
+  margin-bottom: 100px;
+  margin-top: 20px;
 }
 
 .ticker-img__container-right {
   margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 .ticker-img__container {
   max-width: 150px;
-  height: 550px;
+  height: 80%;
   display: flex;
   flex-direction: column;
 
@@ -159,13 +179,15 @@ input[type='number'] {
   z-index: 1;
   pointer-events: none;
 }
+
 .ticker-img__container:before {
   top: 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
+
 .ticker-img__container:after {
   bottom: 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 .ticker-img__items {
@@ -193,6 +215,7 @@ input[type='number'] {
   margin: 10px 0;
   transition: all 0.1s ease-in-out;
 }
+
 .item-ticker:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -243,6 +266,7 @@ input[type='number'] {
   from {
     transform: translateY(0);
   }
+
   to {
     transform: translateY(calc(-100%));
   }
