@@ -132,33 +132,24 @@ input[type='number'] {
 .ticker-img {
   margin-top: 100px;
   margin-bottom: 100px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 50%;
-  max-width: 600px;
+  max-width: 566px;
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+
   gap: 20px;
-  border: 3px solid orange;
+  border: 3px solid purple;
   background-color: rgba(221, 213, 213, 0.5);
   border-radius: 8px;
 }
 
-.ticker-img__container-left {
-  margin-bottom: 100px;
-  margin-top: 20px;
-}
-
-.ticker-img__container-right {
-  margin-top: 100px;
-  margin-bottom: 20px;
-}
-
 .ticker-img__container {
-  max-width: 200px;
-  height: 80%;
+  max-width: 300px;
+  height: 100%;
   display: flex;
   flex-direction: column;
 
@@ -200,28 +191,21 @@ input[type='number'] {
 
 
 .ticker-img__item {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background-color: orange;
-  border: 3px solid darkorange;
-  border-radius: 8px;
+  border: 3px solid purple;
+  border-radius: 13px;
 
   transition: opacity 0.3s ease-in-out;
-}
-
-.ticker-img__item-span {
-  font-size: 24px;
-  line-height: 24px;
-  color: white;
-  font-weight: 600;
+  cursor: pointer;
 }
 
 .marquee {
-  animation: scroll 60s linear infinite;
+  animation: scroll 30s linear infinite;
 }
 
 .reverce {
